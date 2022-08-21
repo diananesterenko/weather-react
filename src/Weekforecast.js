@@ -4,7 +4,7 @@ export default function Weekforecast(props) {
     <div>
       <div className="weektemp" id="forecast"></div>
       <a
-        href="https://github.com/diananesterenko/weather_app"
+        href="https://github.com/diananesterenko/weather-react"
         className="sourselink"
       >
         Open source link
