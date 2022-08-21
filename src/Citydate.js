@@ -3,8 +3,9 @@ import React from "react";
 export default function Citydate(props) {
   return (
     <div className="citydate">
-      <h2 id="city" />
-
+      <div>
+        <h2 id="city"></h2>
+      </div>
       <div className="row ">
         <div className="col-sm-6 main-weather">
           <div className="row">
