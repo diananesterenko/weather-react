@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Citydate.css";
 import axios from "axios";
 import Weathermarkers from "./Weathermarkers";
+import FormatedDate from "./FormatedDate";
 export default function Citydate(props) {
   const [weatherDate, setWeatherDate] = useState({ ready: false });
   function timeConverter(UNIX_timestamp) {
@@ -9,6 +10,13 @@ export default function Citydate(props) {
 
     var hour = a.getHours();
     var min = a.getMinutes();
+    if (hour < 10) {
+      hour = `0${hour}`;
+    }
+
+    if (min < 10) {
+      min = `0${min}`;
+    }
 
     var time = hour + ":" + min;
 
@@ -26,10 +34,11 @@ export default function Citydate(props) {
       description: response.data.weather[0].description,
       sunrise: timeConverter(Math.round(response.data.sys.sunrise)),
       sunset: timeConverter(Math.round(response.data.sys.sunset)),
+      ready: true,
+      date: new Date(response.data.dt * 1000),
     });
-    setReady(true);
   }
-  if (ready) {
+  if (weatherDate.ready) {
     return (
       <div className="citydate">
         <div>
@@ -60,8 +69,9 @@ export default function Citydate(props) {
                   <p id="farenheit">°F</p>
                 </div>
               </div>
-              <p id="day">{}</p>
-              <p id="time">{}</p>
+              <div className="formattedDate">
+                <FormatedDate date={weatherDate.date} />
+              </div>
             </div>
 
             <div className="lowhigh">
