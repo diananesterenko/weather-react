@@ -4,7 +4,7 @@ import Form from "./Form";
 import Citydate from "./Citydate";
 import Weathermarkers from "./Weathermarkers";
 import Weekforecast from "./Weekforecast";
-function App() {
+export default function App() {
   let weatherData = {
     city: "New York",
     temperature: 19,
@@ -33,5 +33,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

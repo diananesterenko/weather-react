@@ -1,16 +1,3 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
 .content {
   background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/039/825/original/fon11_%E2%80%94_%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.png?1657297395);
   padding: 30px 50px 0 50px;
