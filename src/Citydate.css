@@ -1,0 +1,102 @@
+.citydate {
+  box-shadow: 4px 4px 5px 3px rgba(0, 0, 0, 0.268);
+  border: 3px solid none;
+  border-radius: 30px;
+  background-color: #b9b9b93a;
+  padding: 15px 20px 20px 20px;
+}
+.weatherdate2colmn {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.citydate h2 {
+  color: #c0c4c7;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 3px -1px black;
+}
+.currentweather {
+  width: 85%;
+}
+.currentweatherlabel {
+  font-style: italic;
+}
+.citydate h1 {
+  font-size: 70px;
+  text-align: center;
+}
+.citydate p {
+  text-align: center;
+  font-size: 26px;
+}
+.lowhigh {
+  box-shadow: 4px 4px 5px 3px rgba(0, 0, 0, 0.268);
+  margin-top: 20px;
+  border-radius: 26px;
+  border: 3px solid #a3aab0;
+}
+.lowhigh .col-6 {
+  font-size: 22px;
+  text-align: center;
+}
+.CF {
+  display: flex;
+}
+.CF p {
+  color: #d3d3d3be;
+  padding-left: 10px;
+  background-color: none;
+  padding-top: 10px;
+  font-weight: bold;
+  text-shadow: 3px -1px rgb(55, 55, 55);
+}
+#CFline {
+  color: rgb(41, 40, 40);
+  text-shadow: none;
+}
+#celcium:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+#farenheit {
+  padding-left: 6px;
+}
+#farenheit:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.active {
+  text-decoration: underline;
+}
+#min_temp {
+  padding-left: 5px;
+}
+#max_temp {
+  padding-left: 5px;
+}
+#pHum {
+  margin-left: -10px;
+}
+.currentweatherlabel {
+  margin-left: 10px;
+}
+#current {
+  margin-left: 20px;
+  background-image: none;
+  padding-left: 5px;
+  color: rgb(41, 40, 40);
+  cursor: pointer;
+}
+#time {
+  padding-top: 0;
+}
+#day {
+  margin-bottom: 0;
+}
+.degrees {
+  display: flex;
+  justify-content: center;
+}

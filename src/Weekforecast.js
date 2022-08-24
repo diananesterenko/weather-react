@@ -1,4 +1,5 @@
 import React from "react";
+import "./Weekforecast.css";
 export default function Weekforecast(props) {
   return (
     <div>

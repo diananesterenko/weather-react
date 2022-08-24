@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+.content {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/039/825/original/fon11_%E2%80%94_%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.png?1657297395);
+  padding: 30px 50px 0 50px;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  opacity: 0.9;
+  margin-top: 1px;
+  width: 70%;
+  height: 80%;
+  border: 3px solid rgb(41, 40, 40);
+}
+.content h1 {
+  text-shadow: 1px 1px #bbada9;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+hr {
+  border: none;
+  background-color: rgb(41, 40, 40);
+  color: rgb(41, 40, 40);
+  height: 2px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.forecastmiddle img {
+  margin: 15px 0 15px 0;
+
+  width: 70%;
+}
+.weektemp h2 {
+  text-shadow: 1px 1px #bbada9;
+}
+
+@media (max-width: 994px) {
+  .content {
+    width: 90%;
   }
-  to {
-    transform: rotate(360deg);
+  #pHum {
+    margin-left: -5px;
+  }
+}
+@media (max-width: 768px) {
+  .content {
+    width: 100%;
+    padding: 20px 20px 10px 20px;
+  }
+  #pHum {
+    margin-left: -10px;
+  }
+  .weathermarkers p {
+    font-size: 20px;
+  }
+  .search {
+    max-width: 200px;
+  }
+  .submit {
+    max-width: 50px;
+  }
+  #current {
+    margin-left: 5px;
+  }
+}
+@media (max-width: 400px) {
+  #current {
+    display: none;
+  }
+  .submit {
+    max-width: 60px;
+    max-height: 40px;
+  }
+  .search {
+    max-width: 170px;
+    max-height: 40px;
+  }
+  .main-weather div {
+    text-align: center;
+  }
+  h1 {
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  .currentweather {
+    max-width: 20%;
+  }
+  .value {
+    max-width: 80%;
+    margin: 0 auto;
   }
 }

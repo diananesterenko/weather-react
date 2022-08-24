@@ -1,0 +1,28 @@
+.weathermarkers {
+  text-align: center;
+  padding-top: 30px;
+}
+.weathermarkers p {
+  font-size: 26px;
+}
+.input-line {
+  text-align: center;
+}
+.vl {
+  border-left: 2px solid rgb(41, 40, 40);
+  position: absolute;
+  height: 50px;
+}
+.vldiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.value {
+  box-shadow: 4px 4px 5px 3px rgba(0, 0, 0, 0.268);
+  border: 3px solid none;
+  border-radius: 30px;
+  background-color: #b9b9b93a;
+  font-size: 18px;
+  padding: 3px 0 3px 0;
+}

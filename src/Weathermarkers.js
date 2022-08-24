@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./Weathermarkers.css";
 export default function Weathermarkers(props) {
   return (
     <div className="weathermarkers row">
