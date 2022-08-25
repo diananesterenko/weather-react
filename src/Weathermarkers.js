@@ -24,7 +24,7 @@ export default function Weathermarkers(props) {
           <div className="col-6 mt-2 ">
             <p>Sunrise</p>
             <div className="value" id="sunrise">
-              {props.value.sunrise}
+              {props.value.sunset}
             </div>
           </div>
           <div className="col-6 mt-2 ">
