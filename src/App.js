@@ -1,27 +1,15 @@
 import "./App.css";
 import axios from "axios";
-import Form from "./Form";
+//import Form from "./Form";
 import Citydate from "./Citydate";
 import Weathermarkers from "./Weathermarkers";
 import Weekforecast from "./Weekforecast";
 import React, { useState } from "react";
 
 export default function App() {
-  const [city, setCity] = useState(city);
-  function search() {
-    //let city = "London";
-    const apiKey = "80c3fc3b3ba1b20439bcc8b51f4d10ed";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-    axios.get(apiUrl).then(handleResponse);
-  }
-  function handleSubmit(event) {
-    event.prventDefault();
-    search();
-  }
-  function handleCityChange(event) {
-    setCity(event.target.value);
-    console.log(city);
-  }
+  let defaultCity = "Paris";
+  const [city, setCity] = useState(defaultCity);
+
   const [weatherDate, setWeatherDate] = useState({ ready: false });
   function ConvertTime(UNIX_timestamp) {
     var a = new Date(UNIX_timestamp * 1000);
@@ -57,6 +45,21 @@ export default function App() {
       ready: true,
       date: new Date(response.data.dt * 1000),
     });
+  }
+  function search() {
+    //let city = "London";
+    const apiKey = "80c3fc3b3ba1b20439bcc8b51f4d10ed";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(handleResponse);
+  }
+  function handleSubmit(event) {
+    event.preventDefault();
+    console.log("submit");
+    search();
+  }
+  function handleCityChange(event) {
+    setCity(event.target.value);
+    console.log(city);
   }
   if (weatherDate.ready) {
     return (
