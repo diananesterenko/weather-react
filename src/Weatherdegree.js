@@ -16,7 +16,7 @@ export default function Weatherdegree(props) {
         <div className="CF">
           <p id="celcium on">°C</p>
           <p id="CFline">/</p>
-          <a onClick={convertToFarenh} id="farenheit">
+          <a href="#" onClick={convertToFarenh} id="farenheit">
             °F
           </a>
         </div>
@@ -28,7 +28,7 @@ export default function Weatherdegree(props) {
       <div className="degrees">
         <h1 id="currentDegree">{Math.round(farenh)}</h1>
         <div className="CF">
-          <a onClick={convertToCelsius} id="celcium">
+          <a href="#" onClick={convertToCelsius} id="celcium">
             °C
           </a>
           <p id="CFline">/</p>

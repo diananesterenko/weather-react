@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Citydate.css";
 //import axios from "axios";
-import Weathermarkers from "./Weathermarkers";
+
 import FormatedDate from "./FormatedDate";
 import WeatherIcon from "./WeatherIcon";
 import Weatherdegree from "./Weatherdegree";
