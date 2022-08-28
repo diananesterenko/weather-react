@@ -4,6 +4,7 @@ import "./Citydate.css";
 import Weathermarkers from "./Weathermarkers";
 import FormatedDate from "./FormatedDate";
 import WeatherIcon from "./WeatherIcon";
+import Weatherdegree from "./Weatherdegree";
 export default function Citydate(props) {
   /*const [weatherDate, setWeatherDate] = useState({ ready: false });
   function ConvertTime(UNIX_timestamp) {
@@ -59,14 +60,8 @@ export default function Citydate(props) {
 
         <div className="col-sm-6 weatherdate2colmn">
           <div className="row">
-            <div className="degrees">
-              <h1 id="currentDegree">{props.value.temp}</h1>
-              <div className="CF">
-                <p id="celcium">°C</p>
-                <p id="CFline">/</p>
-                <p id="farenheit">°F</p>
-              </div>
-            </div>
+            <Weatherdegree celsius={props.value.temp} />
+
             <div className="formattedDate">
               <FormatedDate date={props.value.date} />
             </div>

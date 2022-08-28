@@ -32,6 +32,10 @@
   text-align: center;
   font-size: 26px;
 }
+.citydate a {
+  text-align: center;
+  font-size: 26px;
+}
 .lowhigh {
   box-shadow: 4px 4px 5px 3px rgba(0, 0, 0, 0.268);
   margin-top: 20px;
@@ -52,6 +56,16 @@
   padding-top: 10px;
   font-weight: bold;
   text-shadow: 3px -1px rgb(55, 55, 55);
+}
+.CF p #on {
+  text-decoration: underline;
+}
+.CF a {
+  color: #d3d3d3be;
+  padding-left: 10px;
+  background-color: none;
+  padding-top: 10px;
+  font-weight: bold;
 }
 #CFline {
   color: rgb(41, 40, 40);
