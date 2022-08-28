@@ -4,6 +4,7 @@ import axios from "axios";
 import Citydate from "./Citydate";
 import Weathermarkers from "./Weathermarkers";
 import Weekforecast from "./Weekforecast";
+
 import React, { useState } from "react";
 
 export default function App() {
@@ -41,7 +42,7 @@ export default function App() {
       description: response.data.weather[0].description,
       sunrise: ConvertTime(Math.round(response.data.sys.sunrise)),
       sunset: ConvertTime(Math.round(response.data.sys.sunset)),
-
+      icon: response.data.weather[0].icon,
       ready: true,
       date: new Date(response.data.dt * 1000),
     });
@@ -63,7 +64,7 @@ export default function App() {
   }
   if (weatherDate.ready) {
     return (
-      <div className="App container">
+      <div className="App">
         <br />
         <div className="content">
           <h1>Weather Forecast</h1>

@@ -3,6 +3,7 @@ import "./Citydate.css";
 //import axios from "axios";
 import Weathermarkers from "./Weathermarkers";
 import FormatedDate from "./FormatedDate";
+import WeatherIcon from "./WeatherIcon";
 export default function Citydate(props) {
   /*const [weatherDate, setWeatherDate] = useState({ ready: false });
   function ConvertTime(UNIX_timestamp) {
@@ -49,12 +50,7 @@ export default function Citydate(props) {
       <div className="row ">
         <div className="col-sm-6 main-weather">
           <div className="row">
-            <img
-              id="main_icon"
-              src=" https://s3.amazonaws.com/shecodesio-production/uploads/files/000/040/021/original/6.png?1657469878"
-              alt="sun"
-              className="currentweather pe-4"
-            />
+            <WeatherIcon value={props.value.icon} />
           </div>
           <div className="row">
             <p className="currentweatherlabel">{props.value.description}</p>
