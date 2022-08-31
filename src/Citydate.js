@@ -51,7 +51,7 @@ export default function Citydate(props) {
       <div className="row ">
         <div className="col-sm-6 main-weather">
           <div className="row">
-            <WeatherIcon value={props.value.icon} />
+            <WeatherIcon value={props.value.icon} size={250} />
           </div>
           <div className="row">
             <p className="currentweatherlabel">{props.value.description}</p>

@@ -1,0 +1,37 @@
+.WeatherForecast {
+  text-align: center;
+  font-size: 22px;
+}
+
+.WeatherForecast-temperature-min {
+  opacity: 0.6;
+  margin-left: 5px;
+}
+.col2 {
+  box-shadow: 4px 4px 5px 3px rgba(0, 0, 0, 0.268);
+
+  border: 3px solid none;
+  border-radius: 3px;
+  background-color: #b9b9b93a;
+  font-size: 18px;
+  width: 14%;
+  margin: 0px 5px;
+}
+.col {
+  padding: 10px 0px 0px;
+}
+.WeatherForecast-day {
+  width: 85%;
+  margin: 0 auto;
+  border-radius: 16px;
+  border: 2px solid #a3aab0;
+}
+.WeatherForecast-day p {
+  margin: 2px 0px;
+}
+.weathericonweek {
+  margin: 16px 0px 7px 0px;
+}
+.WeatherForecast-temperatures {
+  text-shadow: 1px 1px #bbada9;
+}
