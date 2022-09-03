@@ -72,7 +72,7 @@ export default function App() {
           <div className="Form">
             <form onSubmit={handleSubmit} className="mt-3 mb-3" id="forminput">
               <div className="row">
-                <div className="col-7 input-line">
+                <div className="col-8 input-line">
                   <input
                     id="search"
                     className="search"
@@ -81,14 +81,8 @@ export default function App() {
                     onChange={handleCityChange}
                   />
                 </div>
-                <div className="col-5 input-line">
+                <div className="col-3 input-line">
                   <input type="submit" className="submit" value="   " />
-                  <input
-                    type=""
-                    className="submit"
-                    id="current"
-                    value="Current"
-                  />
                 </div>
               </div>
             </form>
